@@ -1,0 +1,34 @@
+{
+    "cigars": {
+      "cigar1": {
+        "cigarName": "My Fathers Cigar",
+        "imageUrl": "",
+        "year": "",
+        "location": "",
+        "experience": ""
+                },
+
+     "cigar2": {
+        "cigarName": "MF The Judge",
+        "imageUrl": "",
+        "year": "",
+        "location": "",
+        "experience": ""
+                 },
+
+     "cigar3": {
+        "cigarName": "The Wise Man",
+        "imageUrl": "",
+        "year": "",
+        "location": "",
+        "experience": ""
+                },
+        "cigar4": {
+            "cigarName": "Brick House",
+            "imageUrl": "",
+            "year": "",
+            "location": "",
+            "experience": ""
+                    }
+    }
+}
