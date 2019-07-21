@@ -2,7 +2,7 @@
     "cigars": {
       "cigar1": {
         "cigarName": "My Fathers Cigar",
-        "imageUrl": "",
+        "imageUrl": "https://raw.githubusercontent.com/CalvinDaMogul/myHumidor/master/img/my_fathers_cigar.JPG",
         "year": "2019",
         "location": "Nashville, TN",
         "experience": "This is one of my favorit cigars. It's good to have with a whiskey or bourbon",
@@ -11,7 +11,7 @@
 
      "cigar2": {
         "cigarName": "MF The Judge",
-        "imageUrl": "",
+        "imageUrl": "https://raw.githubusercontent.com/CalvinDaMogul/myHumidor/master/img/mf_the_judge.JPG",
         "year": "2019",
         "location": "Nashville, TN",
         "experience": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
@@ -23,7 +23,7 @@
         "imageUrl": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
         "year": "2019",
         "location": "Nashville, TN",
-        "experience": "",
+        "experience": "https://raw.githubusercontent.com/CalvinDaMogul/myHumidor/master/img/the_wise_man.JPG",
         "uid": "PWtjvlZy38XkrDHpWINyK21AhQp2"
                 },
         "cigar4": {
@@ -31,7 +31,7 @@
             "imageUrl": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
             "year": "2019",
             "location": "Nashville, TN",
-            "experience": "",
+            "experience": "https://raw.githubusercontent.com/CalvinDaMogul/myHumidor/master/img/Brick_House.JPG",
             "uid": "2478"
                     }
     }
