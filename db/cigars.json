@@ -3,32 +3,36 @@
       "cigar1": {
         "cigarName": "My Fathers Cigar",
         "imageUrl": "",
-        "year": "",
-        "location": "",
-        "experience": ""
+        "year": "2019",
+        "location": "Nashville, TN",
+        "experience": "This is one of my favorit cigars. It's good to have with a whiskey or bourbon",
+        "uid": "PWtjvlZy38XkrDHpWINyK21AhQp2"
                 },
 
      "cigar2": {
         "cigarName": "MF The Judge",
         "imageUrl": "",
-        "year": "",
-        "location": "",
-        "experience": ""
+        "year": "2019",
+        "location": "Nashville, TN",
+        "experience": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
+        "uid": "PWtjvlZy38XkrDHpWINyK21AhQp2"
                  },
 
      "cigar3": {
         "cigarName": "The Wise Man",
-        "imageUrl": "",
-        "year": "",
-        "location": "",
-        "experience": ""
+        "imageUrl": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
+        "year": "2019",
+        "location": "Nashville, TN",
+        "experience": "",
+        "uid": "PWtjvlZy38XkrDHpWINyK21AhQp2"
                 },
         "cigar4": {
             "cigarName": "Brick House",
-            "imageUrl": "",
-            "year": "",
-            "location": "",
-            "experience": ""
+            "imageUrl": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
+            "year": "2019",
+            "location": "Nashville, TN",
+            "experience": "",
+            "uid": "2478"
                     }
     }
 }
