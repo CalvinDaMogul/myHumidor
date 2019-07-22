@@ -11,6 +11,7 @@ import 'firebase/auth';
 import Navbar from '../components/Navbar/Navbar';
 import Home from '../components/Home/Home';
 import Auth from '../components/Auth/Auth';
+import NewCigar from '../components/NewCigar/NewCigar';
 
 import './App.scss';
 
@@ -67,6 +68,7 @@ class App extends React.Component {
                <Switch>
                  <PublicRoute path='/auth' component={Auth} authed={authed}/>
                  <PrivateRoute path='/home' component={Home} authed={authed} />
+                 <PrivateRoute path='/new' component={NewCigar} authed={authed} />
                  <Redirect from="*" to="/auth" />
                </Switch>
              </div>

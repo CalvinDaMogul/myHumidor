@@ -20,4 +20,10 @@ const getMyCigars = uid => new Promise((resolve, reject) => {
 
 const getSingleCigar = cigarId => axios.get(`${baseUrl}/cigars/${cigarId}.json`);
 
-export default { getSingleCigar, getMyCigars };
+const postCigar = newCigar => axios.post(`${baseUrl}/cigars.json`, newCigar);
+
+export default {
+  getSingleCigar,
+  getMyCigars,
+  postCigar,
+};
