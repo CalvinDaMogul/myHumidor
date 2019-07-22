@@ -18,6 +18,8 @@ const getMyCigars = uid => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const deleteCigar = cigarId => axios.delete(`${baseUrl}/cigars/${cigarId}.json`);
+
 const getSingleCigar = cigarId => axios.get(`${baseUrl}/cigars/${cigarId}.json`);
 
 const postCigar = newCigar => axios.post(`${baseUrl}/cigars.json`, newCigar);
@@ -26,4 +28,5 @@ export default {
   getSingleCigar,
   getMyCigars,
   postCigar,
+  deleteCigar,
 };
