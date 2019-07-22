@@ -20,18 +20,18 @@
 
      "cigar3": {
         "cigarName": "The Wise Man",
-        "imageUrl": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
+        "imageUrl": "https://raw.githubusercontent.com/CalvinDaMogul/myHumidor/master/img/the_wise_man.JPG",
         "year": "2019",
         "location": "Nashville, TN",
-        "experience": "https://raw.githubusercontent.com/CalvinDaMogul/myHumidor/master/img/the_wise_man.JPG",
+        "experience": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
         "uid": "PWtjvlZy38XkrDHpWINyK21AhQp2"
                 },
         "cigar4": {
             "cigarName": "Brick House",
-            "imageUrl": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
+            "imageUrl": "https://raw.githubusercontent.com/CalvinDaMogul/myHumidor/master/img/Brick_House.JPG",
             "year": "2019",
             "location": "Nashville, TN",
-            "experience": "https://raw.githubusercontent.com/CalvinDaMogul/myHumidor/master/img/Brick_House.JPG",
+            "experience": "By far my favorite stick. It's a smooth smoke but very strong though I had my first taste of this cigar in Nashville.",
             "uid": "2478"
                     }
     }
