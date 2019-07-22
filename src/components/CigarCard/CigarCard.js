@@ -1,10 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import cigarShape from '../../Helpers/propz/cigarShape';
 
 class CigarCard extends React.Component {
     static propTypes = {
       cigars: cigarShape.cigarCardShape,
+      deleteCigar: PropTypes.func.isRequired,
+    }
+
+    deleteMe = (e) => {
+      e.preventDefault();
+      const { cigar, deleteCigar } = this.props;
+      deleteCigar(cigar.id);
     }
 
     render() {
@@ -19,7 +27,7 @@ class CigarCard extends React.Component {
               <p className="card-text">{cigar.location}</p>
               <p className="card-text">{cigar.experience}</p>
               <button className="btn btn-primary">Edit</button>
-              <button className="btn btn-primary">Delete</button>
+              <button className="btn btn-primary" onClick={this.deleteMe}>Delete</button>
             </div>
           </div>
       );

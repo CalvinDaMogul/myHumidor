@@ -23,11 +23,18 @@ class Home extends React.Component {
       this.getCigars();
     }
 
+    deleteCigar = (cigarId) => {
+      cigarData.deleteCigar(cigarId)
+        .then(() => this.getCigars())
+        .catch(err => console.error('unable to delete', err));
+    }
+
     render() {
       const makeCigarCards = this.state.cigars.map(cigar => (
             <CigarCard
               key={cigar.id}
               cigar={cigar}
+              deleteCigar={this.deleteCigar}
 
             />
       ));
