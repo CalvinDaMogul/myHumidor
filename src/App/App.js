@@ -12,6 +12,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Home from '../components/Home/Home';
 import Auth from '../components/Auth/Auth';
 import NewCigar from '../components/NewCigar/NewCigar';
+import EditCigar from '../components/EditCigar/EditCigar';
 
 import './App.scss';
 
@@ -69,6 +70,7 @@ class App extends React.Component {
                  <PublicRoute path='/auth' component={Auth} authed={authed}/>
                  <PrivateRoute path='/home' component={Home} authed={authed} />
                  <PrivateRoute path='/new' component={NewCigar} authed={authed} />
+                 <PrivateRoute path='/edit/:id' component={EditCigar} authed={authed} />
                  <Redirect from="*" to="/auth" />
                </Switch>
              </div>

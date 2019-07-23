@@ -24,9 +24,12 @@ const getSingleCigar = cigarId => axios.get(`${baseUrl}/cigars/${cigarId}.json`)
 
 const postCigar = newCigar => axios.post(`${baseUrl}/cigars.json`, newCigar);
 
+const putCigar = (updatedCigar, cigarId) => axios.put(`${baseUrl}/cigars/${cigarId}.json`, updatedCigar);
+
 export default {
   getSingleCigar,
   getMyCigars,
   postCigar,
   deleteCigar,
+  putCigar,
 };
