@@ -19,6 +19,8 @@ class NewCigar extends React.Component {
     }
 
     formFieldStringState = (name, e) => {
+      console.error(e.target.value);
+      // Checking for text
       const tempCigar = { ...this.state.newCigar };
       tempCigar[name] = e.target.value;
       this.setState({ newCigar: tempCigar });
@@ -32,7 +34,7 @@ class NewCigar extends React.Component {
 
     locationChange = e => this.formFieldStringState('location', e);
 
-    experienceChagne = e => this.formFieldStringState('experience', e);
+    experienceChange = e => this.formFieldStringState('experience', e);
 
     formSubmit = (e) => {
       e.preventDefault();
@@ -100,7 +102,7 @@ class NewCigar extends React.Component {
               type="text"
               className="form-control"
               id="experience"
-              placeholder="How was it"
+              placeholder="How was your experience"
               value={newCigar.experience}
               onChange={this.experienceChange}
             />
