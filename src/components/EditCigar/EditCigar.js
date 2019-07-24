@@ -37,6 +37,7 @@ experienceChange = e => this.formFieldStringState('experience', e);
 formSubmit = (e) => {
   e.preventDefault();
   const saveMe = { ...this.state.editCigar };
+  console.error(saveMe);
   const cigarId = this.props.match.params.id;
   cigarData.putCigar(saveMe, cigarId)
     .then(() => this.props.history.push('/home'))
@@ -111,7 +112,7 @@ render() {
             onChange={this.experienceChange}
           />
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary">Update</button>
       </form>
     </div>
   );
