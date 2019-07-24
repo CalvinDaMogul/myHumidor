@@ -20,7 +20,7 @@ class CigarCard extends React.Component {
       const editLink = `/edit/${cigar.id}`;
 
       return (
-            <div className="ScatCard col-4">
+            <div className="CigarCard col-3">
             <img className="card-img-top" src={cigar.imageUrl} alt="Card cap" />
             <div className="card-body">
               <h5 className="card-title">{cigar.cigarName}</h5>
