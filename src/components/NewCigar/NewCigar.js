@@ -80,7 +80,7 @@ class NewCigar extends React.Component {
               type="text"
               className="form-control"
               id="year"
-              placeholder="year"
+              placeholder="Year"
               value={newCigar.year}
               onChange={this.yearChange}
             />

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+
 import cigarShape from '../../Helpers/propz/cigarShape';
 
 class CigarCard extends React.Component {
@@ -21,14 +22,14 @@ class CigarCard extends React.Component {
 
       return (
             <div className="CigarCard col-3">
-            <img className="card-img-top" src={cigar.imageUrl} alt="Card cap" />
             <div className="card-body">
               <h5 className="card-title">{cigar.cigarName}</h5>
+            <img className="card-img-top" src={cigar.imageUrl} alt="Card cap" />
               <p className="card-text">{cigar.year}</p>
               <p className="card-text">{cigar.location}</p>
               <p className="card-text">{cigar.experience}</p>
-              <Link className="btn btn-primary" to={editLink}>Edit</Link>
-              <button className="btn btn-primary" onClick={this.deleteMe}>Delete</button>
+              <Link className="btn btn-secondary" to={editLink}>Edit</Link>
+              <button className="btn btn-secondary" onClick={this.deleteMe}>Delete</button>
             </div>
           </div>
       );
