@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import cigarShape from '../../Helpers/propz/cigarShape';
+import './CigarCard.scss';
 
 class CigarCard extends React.Component {
     static propTypes = {
