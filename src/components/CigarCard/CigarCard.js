@@ -21,11 +21,20 @@ class CigarCard extends React.Component {
       const { cigar } = this.props;
       const editLink = `/edit/${cigar.id}`;
 
+      const starArray = [];
+
+      for (let i = 0; i < cigar.rating; i += 1) {
+        starArray.push(<i className="fas fa-star"></i>);
+        // Runs 5 times, with values of step 0 through 5.
+        console.error('Show number of stars');
+      }
+
       return (
             <div className="CigarCard col-3">
             <div className="card-body">
               <h5 className="card-title">{cigar.cigarName}</h5>
             <img className="card-img-top" src={cigar.imageUrl} alt="Card cap" />
+            <p className="card-text">{starArray}</p>
               <p className="card-text">{cigar.year}</p>
               <p className="card-text">{cigar.location}</p>
               <p className="card-text">{cigar.experience}</p>
