@@ -7,6 +7,7 @@ import './NewCigar.scss';
 
 const defaultCigar = {
   cigarName: '',
+  rating: '',
   imageUrl: '',
   year: '',
   location: '',
@@ -29,6 +30,8 @@ class NewCigar extends React.Component {
     cigarNameChange = e => this.formFieldStringState('cigarName', e);
 
     imageUrlChange = e => this.formFieldStringState('imageUrl', e);
+
+    ratingChange = e => this.formFieldStringState('rating', e);
 
     yearChange = e => this.formFieldStringState('year', e);
 
@@ -73,6 +76,17 @@ class NewCigar extends React.Component {
               value={newCigar.imageUrl}
               onChange={this.imageUrlChange}
             />
+             <div className="form-group">
+            <label htmlFor="rating">rating</label>
+            <input
+              type="value"
+              className="form-control"
+              id="rating"
+              placeholder="Rate cigar"
+              value={newCigar.rating}
+              onChange={this.ratingChange}
+            />
+          </div>
              </div>
           <div className="form-group">
             <label htmlFor="year">Year</label>
