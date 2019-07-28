@@ -78,14 +78,13 @@ class NewCigar extends React.Component {
             />
              <div className="form-group">
             <label htmlFor="rating">rating</label>
-            <input
-              type="value"
-              className="form-control"
-              id="rating"
-              placeholder="Rate cigar"
-              value={newCigar.rating}
-              onChange={this.ratingChange}
-            />
+             <select value={newCigar.rating} onChange={this.ratingChange}>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
           </div>
              </div>
           <div className="form-group">

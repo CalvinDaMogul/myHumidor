@@ -7,6 +7,7 @@ import './EditCigar.scss';
 const defaultCigar = {
   cigarName: '',
   imageUrl: '',
+  rating: '',
   year: '',
   location: '',
   experience: '',
@@ -27,6 +28,8 @@ formFieldStringState = (name, e) => {
 cigarNameChange = e => this.formFieldStringState('cigarName', e);
 
 imageUrlChange = e => this.formFieldStringState('imageUrl', e);
+
+ratingChange = e => this.formFieldStringState('rating', e);
 
 yearChange = e => this.formFieldStringState('year', e);
 
@@ -79,6 +82,16 @@ render() {
             onChange={this.imageUrlChange}
           />
            </div>
+           <div className="form-group">
+            <label htmlFor="rating">rating</label>
+             <select value={editCigar.rating} onChange={this.ratingChange}>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          </div>
         <div className="form-group">
           <label htmlFor="year">Year</label>
           <input

@@ -41,7 +41,7 @@ class Home extends React.Component {
       return (
       <div className="Home col">
         <h1 className="header">Cigarficionado</h1>
-        <div className="d-flex">
+        <div className="d-flex row wrap">
             {makeCigarCards}
         </div>
 
