@@ -24,9 +24,8 @@ class CigarCard extends React.Component {
       const starArray = [];
 
       for (let i = 0; i < cigar.rating; i += 1) {
-        starArray.push(<i className="fas fa-star"></i>);
+        starArray.push(<i className="fas fa-fire fa-lg"></i>);
         // Runs 5 times, with values of step 0 through 5.
-        console.error('Show number of stars');
       }
 
       return (
@@ -34,7 +33,7 @@ class CigarCard extends React.Component {
             <div className="card-body">
               <h5 className="card-title">{cigar.cigarName}</h5>
             <img className="card-img-top" src={cigar.imageUrl} alt="Card cap" />
-            <p className="card-text">{starArray}</p>
+            <p className="card-text">Rating: {starArray}</p>
               <p className="card-text">{cigar.year}</p>
               <p className="card-text">{cigar.location}</p>
               <p className="card-text">{cigar.experience}</p>
