@@ -34,10 +34,10 @@ class CigarCard extends React.Component {
               <h5 className="card-title">{cigar.cigarName}</h5>
             <img className="card-img-top" src={cigar.imageUrl} alt="Card cap" />
             <p className="card-text">Rating: {starArray}</p>
-              <p className="card-text">{cigar.year}</p>
+              <p className="card-text">Date: {cigar.year}</p>
               <p className="card-text">{cigar.location}</p>
               <p className="card-text">{cigar.experience}</p>
-              <Link className="btn btn-secondary" to={editLink}>Edit</Link>
+              <Link className="btn btn-secondary" to={editLink}>Update</Link>
               <button className="btn btn-secondary" onClick={this.deleteMe}>Delete</button>
             </div>
           </div>

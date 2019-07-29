@@ -75,9 +75,10 @@ class NewCigar extends React.Component {
               placeholder="Cigar Image"
               value={newCigar.imageUrl}
               onChange={this.imageUrlChange}
-            />
+              />
+              </div>
              <div className="form-group">
-            <label htmlFor="rating">rating</label>
+            <label htmlFor="rating">Rating of Cigar </label>
              <select value={newCigar.rating} onChange={this.ratingChange}>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -86,7 +87,6 @@ class NewCigar extends React.Component {
             <option value="5">5</option>
           </select>
           </div>
-             </div>
           <div className="form-group">
             <label htmlFor="year">Year</label>
             <input

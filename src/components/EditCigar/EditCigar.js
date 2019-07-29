@@ -83,7 +83,7 @@ render() {
           />
            </div>
            <div className="form-group">
-            <label htmlFor="rating">rating</label>
+            <label htmlFor="rating">Rating of Cigar</label>
              <select value={editCigar.rating} onChange={this.ratingChange}>
             <option value="1">1</option>
             <option value="2">2</option>
