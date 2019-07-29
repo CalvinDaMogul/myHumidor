@@ -35,7 +35,7 @@ class CigarCard extends React.Component {
             <img className="card-img-top" src={cigar.imageUrl} alt="Card cap" />
             <p className="card-text">Rating: {starArray}</p>
               <p className="card-text">Date: {cigar.year}</p>
-              <p className="card-text">{cigar.location}</p>
+              <p className="card-text">Location: {cigar.location}</p>
               <p className="card-text">{cigar.experience}</p>
               <Link className="btn btn-secondary" to={editLink}>Update</Link>
               <button className="btn btn-secondary" onClick={this.deleteMe}>Delete</button>

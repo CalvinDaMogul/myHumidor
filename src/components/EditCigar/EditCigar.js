@@ -58,7 +58,7 @@ render() {
   const { editCigar } = this.state;
   return (
           <div className="EditCigar">
-      <h1>Edit Cigar</h1>
+      <h1 className="form-group">Edit Cigar</h1>
       <form onSubmit={this.formSubmit}>
         <div className="form-group">
           <label htmlFor="cigarName">Cigar Name</label>

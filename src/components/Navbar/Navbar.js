@@ -40,13 +40,13 @@ class navbar extends React.Component {
           return (
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink tag={RRNavLink} to='/home'>Home</NavLink>
+                <NavLink className="font" tag={RRNavLink} to='/home'>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={RRNavLink} to='/new'>Add a Cigar</NavLink>
+                <NavLink className="font" tag={RRNavLink} to='/new'>Add a Cigar</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={this.logMeOut}>Logout</NavLink>
+                <NavLink className="font" onClick={this.logMeOut}>Logout</NavLink>
               </NavItem>
             </Nav>
           );
@@ -57,7 +57,7 @@ class navbar extends React.Component {
       return (
         <div className="MyNavbar">
           <Navbar color="dark" dark expand="md">
-            <NavbarBrand href="/">My Humidor</NavbarBrand>
+            <NavbarBrand className="font" href="/">My Humidor</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               {buildNavbar()}

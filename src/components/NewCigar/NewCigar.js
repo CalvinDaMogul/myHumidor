@@ -53,7 +53,7 @@ class NewCigar extends React.Component {
       const { newCigar } = this.state;
       return (
             <div className="NewCigar">
-        <h1>New Cigar</h1>
+        <h1 className="form-group">New Cigar</h1>
         <form onSubmit={this.formSubmit}>
           <div className="form-group">
             <label htmlFor="cigarName">Cigar Name</label>
@@ -61,7 +61,7 @@ class NewCigar extends React.Component {
               type="text"
               className="form-control"
               id="cigarName"
-              placeholder="Name cigar"
+              placeholder="Name of cigar"
               value={newCigar.cigarName}
               onChange={this.cigarNameChange}
             />
@@ -72,7 +72,7 @@ class NewCigar extends React.Component {
               type="text"
               className="form-control"
               id="imageUrl"
-              placeholder="Cigar Image"
+              placeholder="Image of a cigar"
               value={newCigar.imageUrl}
               onChange={this.imageUrlChange}
               />
@@ -93,7 +93,7 @@ class NewCigar extends React.Component {
               type="text"
               className="form-control"
               id="year"
-              placeholder="Year"
+              placeholder="Year you got the cigar"
               value={newCigar.year}
               onChange={this.yearChange}
             />
@@ -104,13 +104,13 @@ class NewCigar extends React.Component {
               type="text"
               className="form-control"
               id="location"
-              placeholder="location"
+              placeholder="Where was the location"
               value={newCigar.location}
               onChange={this.locationChange}
             />
           </div>
           <div className="form-group">
-            <label htmlFor="location">Experience</label>
+            <label htmlFor="experience">Experience</label>
             <input
               type="text"
               className="form-control"
