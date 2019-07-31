@@ -125,7 +125,7 @@ render() {
             onChange={this.experienceChange}
           />
         </div>
-        <button type="submit" className="btn btn-primary">Update</button>
+        <button type="submit" className="btn btn-secondary">Update</button>
       </form>
     </div>
   );

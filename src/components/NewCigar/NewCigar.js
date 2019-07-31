@@ -20,7 +20,6 @@ class NewCigar extends React.Component {
     }
 
     formFieldStringState = (name, e) => {
-      console.error(e.target.value);
       // Checking for text
       const tempCigar = { ...this.state.newCigar };
       tempCigar[name] = e.target.value;
@@ -120,7 +119,7 @@ class NewCigar extends React.Component {
               onChange={this.experienceChange}
             />
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-secondary">Submit</button>
         </form>
       </div>
       );
