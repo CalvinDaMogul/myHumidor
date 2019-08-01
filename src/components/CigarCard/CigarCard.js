@@ -25,7 +25,6 @@ class CigarCard extends React.Component {
 
       for (let i = 0; i < cigar.rating; i += 1) {
         starArray.push(<i className="fas fa-fire fa-lg"></i>);
-        // Runs 5 times, with values of step 0 through 5.
       }
 
       return (

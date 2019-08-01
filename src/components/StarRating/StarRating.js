@@ -1,18 +1,31 @@
-// import React from 'react';
+function Example() {
+  const [show, setShow] = useState(false);
 
-// const createStars = (rating) => {
-//   if (rating === 'No rating') {
-//     return 'No rating';
-//   }
-// };
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-// const ratingDisplay = [];
-// for (let i = 1; i < rating + 1; i += 1) {
-//   ratingDisplay.push(< i className="fas fa-star"></i>);
-// }
-// for (let m = rating + 1; m < 6; m += 1) {
-//   ratingDisplay.push(<i className="far fa-star"></i>);
-// }
-// return ratingDisplay;
+  return (
 
-// export default createStars;
+        <Button variant="primary" onClick={handleShow}>
+          Launch demo modal
+        </Button>
+
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+
+  );
+}
+  
+render(<Example />);

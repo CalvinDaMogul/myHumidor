@@ -42,7 +42,6 @@ class NewCigar extends React.Component {
       e.preventDefault();
       const saveMe = { ...this.state.newCigar };
       saveMe.uid = firebase.auth().currentUser.uid;
-      console.error('thing to save', saveMe);
       cigarData.postCigar(saveMe)
         .then(() => this.props.history.push('/home'))
         .catch(err => console.error('unable to save', err));
