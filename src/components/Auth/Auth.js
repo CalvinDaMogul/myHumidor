@@ -20,7 +20,7 @@ class Auth extends React.Component {
 
       <div className="jumbotron jumbotron-fluid">
   <div className="container">
-    <h1 className="display-4">My Humidor</h1>
+    <h1 className="display-4">Keep Track of All Your Cigars</h1>
     <button className="btn btn-secondary btn-lg" onClick={this.loginClickEvent}>Log In</button>
   </div>
 </div>
