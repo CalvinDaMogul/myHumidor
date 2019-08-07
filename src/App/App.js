@@ -1,4 +1,5 @@
 import React from 'react';
+// import StickyFooter from 'react-sticky-footer';
 import {
   BrowserRouter,
   Route,
@@ -13,7 +14,6 @@ import Home from '../components/Home/Home';
 import Auth from '../components/Auth/Auth';
 import NewCigar from '../components/NewCigar/NewCigar';
 import EditCigar from '../components/EditCigar/EditCigar';
-
 import './App.scss';
 
 import fbConnection from '../Helpers/data/connections';
