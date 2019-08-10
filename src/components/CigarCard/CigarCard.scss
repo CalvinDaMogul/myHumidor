@@ -1,7 +1,8 @@
 .card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
-    background: #E8DB7D;
+    background-color: #EFEBCE;
+    opacity: 0.8;
     border-radius: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -9,13 +10,14 @@
 
 h5 {
     font-size: 1.25rem;
-    font-family: Teko;
+    font-family: Acme;
 }
 
 p {
     margin-top: 0;
     margin-bottom: 1rem;
-    font-family: Teko;
+    font-family: Acme;
+    font-size:15px;
 }
 
 
